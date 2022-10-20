@@ -1,9 +1,9 @@
-# LOTpython
+#  LOT_Wasserstein_Barycenters
 
-Main example for classifying sheared MNIST images is provided as a jupyter notebook "DiscreteLOT/Multireference_MNIST_Classification.ipynb"
+Using LOT embeddings of the optimal transport maps between empirical distributions to find an approximate solution to the Wasserstein barycenter problem.
 
-Reference: Khurana, V., Kannan, H., Cloninger, A., & Moosmüller, C. (2022). Supervised learning of sheared distributions using linearized optimal transport. arXiv preprint arXiv:2201.10590.
+This is a fork of https://github.com/srjr-hkannan/LOTpython and in particular relies on Gaussians.py by Harish Kannan + collaborators. 
 
-Dataset used: MNIST dataset (Deng, L. (2012). The mnist database of handwritten digit images for machine learning research. IEEE Signal Processing Magazine, 29(6), 141–142.)
+This work is using theory from the paper "Supervised learning of sheared distributions using linearized optimal transport" by Varun Khurana, Harish Kannan, Alexander Cloninger, and Caroline Moosmuller. https://arxiv.org/pdf/2201.10590.pdf
 
-Dependencies : numpy, scipy, pot (https://pythonot.github.io/), matplotlib, tensorflow, seaborn, scikit-learn
+Known issue: Entropically regularized wasserstein barycenters aren't super well implemented.
